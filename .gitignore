@@ -1,0 +1,7 @@
+.vs
+[Dd]ebug/
+[Bb]in/
+*/bin/
+[Oo]bj/
+published/
+Todo.db
