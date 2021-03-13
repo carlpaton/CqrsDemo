@@ -1,7 +1,6 @@
 ﻿using CqrsDemo.Domain.Interfaces;
 using CqrsDemo.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
-using System;
 
 namespace CqrsDemo.Api.Controllers
 {
@@ -21,17 +20,6 @@ namespace CqrsDemo.Api.Controllers
             var selectList = _repository.SelectList();
 
             return Ok(selectList);
-        }
-
-        [HttpGet("/create-tables")]
-        public IActionResult CreateTables()
-        {
-            var sql = @"
-DROP TABLE IF EXISTS Todo; 
-CREATE TABLE Todo (Id INTEGER PRIMARY KEY, Name TEXT, Completed BOOL)";
-            _repository.ExecuteNonQuery(sql);
-
-            return Ok("Tables created in `Todo.db`. " + DateTime.Now);
         }
 
         [HttpPost("/insert")]
