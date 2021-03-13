@@ -15,7 +15,7 @@ namespace CqrsDemo.Infrastructure.Database
 
         public Repository()
         {
-            var connectionString = "Data Source=Todo.db;";
+            var connectionString = "Data Source=../CqrsDemo.Infrastructure/Todo.db;";
             _dbConn = new SqliteConnection(connectionString);
         }
 

@@ -6,7 +6,6 @@ using System;
 namespace CqrsDemo.Api.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
     public class TodoController : ControllerBase
     {
         private readonly IRepository _repository;
