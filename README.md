@@ -44,6 +44,8 @@ app.UseSwaggerUI(c =>
 
 ## References
 
+- https://restfulapi.net/resource-naming/
+- https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api
 - https://github.com/jonathanjameswilliams26/CQRSInDotnetCore
 - https://www.sqlitetutorial.net/
 - https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle

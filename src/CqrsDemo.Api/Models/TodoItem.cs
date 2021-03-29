@@ -1,6 +1,6 @@
-﻿namespace CqrsDemo.Domain.Models
+﻿namespace CqrsDemo.Api.Models
 {
-    public class Todo
+    public class TodoItem
     {
         public int Id { get; set; }
         public string Name { get; set; }
